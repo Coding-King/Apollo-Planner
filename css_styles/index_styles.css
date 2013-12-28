@@ -1,0 +1,178 @@
+/*
+
+index_styles.css
+author: Elijah Carbonaro
+defines the styles for index.php
+
+*/
+
+#center_body
+{
+    position: absolute;
+    width: 800px;
+    height: 560px;
+    top: 10px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: white;
+}
+#top_bar
+{
+    position:absolute;
+    left:0px;
+    top:-5px;
+    width:800px;
+    height:75px;
+    background-color:Silver;
+    border-radius:5px;
+}
+#sunset_logo
+{
+    position:absolute;
+    left:2px;
+    top:-5px;
+    width:80px;
+    height:80px;
+}
+#apollo_name
+{
+    position:absolute;
+    left:90px;
+    top:15px;
+    line-height: 0px;
+    height:1px;
+}
+#login_div
+{
+    position:absolute;
+    right:0px;
+    top:-5px;
+    height:75px;
+    width:330px;
+}
+#main_content
+{
+    position:absolute;
+    left:0px;
+    width:800px;
+    height:500px;
+    top:65px;
+    overflow:hidden;
+}
+#intro_blurb
+{
+    position:absolute;
+    left:10px;
+    width:780px;
+    height:30px;
+    top:15px;
+    text-align: center;
+    border-radius:5px;
+    background-color:silver;
+    line-height:0px;
+}
+#signup_form_div
+{
+    position:absolute;
+    left:80px;
+    top:80px;
+    width:180px;
+    height:500px;
+}
+.submitButton1
+{
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height:0px;
+    height:20px;
+    cursor:pointer;
+    width:120px;
+}
+.submitButton2
+{
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height:0px;
+    height:25px;
+    cursor:pointer;
+    width:170px;
+}
+
+/* All the fonts */
+h1
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 30px;
+}
+.plain_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 19px;
+}
+.intro_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 17px;
+}
+.form_font
+{
+    color:grey;
+    font-family: "Arial", Times, serif;
+    font-size: 14px;
+}
+.footer_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    cursor:pointer;
+}
+#footer
+{
+    position:absolute;
+    left:0px;
+    width:800px;
+    height:20px;
+    bottom:-10px;
+    background-color:Silver;
+    border-radius:5px;
+}
+
+/* Slider panels */
+#whats_this_panel
+{
+    border-radius:5px;
+    position:absolute;
+    left:-314px;
+    top:100px;
+    width:300px;
+    height:230px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+/* Notification Panel*/
+#notification_panel
+{
+    position: fixed;
+    width: 200px;
+    height: 25px;
+    top: -60px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    line-height:0px;
+}
+#notification_text
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 13px;
+}

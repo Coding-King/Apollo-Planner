@@ -1,0 +1,355 @@
+/*
+
+teach_styles.css
+author: Elijah Carbonaro
+defines the styles for teach.php
+
+*/
+
+#temp_box
+{
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    background-color:orange;
+    width:200px;
+    height:100px;
+}
+
+#center_body
+{
+    position: absolute;
+    width: 800px;
+    height: 960px;
+    top: 10px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: white;
+    z-index:1;
+}
+#top_bar
+{
+    position:absolute;
+    left:0px;
+    top:-5px;
+    width:800px;
+    height:50px;
+    background-color:Silver;
+    border-radius:5px;
+}
+#sunset_logo
+{
+    position:absolute;
+    left:2px;
+    top:-5px;
+    width:55px;
+    height:55px;
+}
+#apollo_name
+{
+    position:absolute;
+    left:70px;
+    top:6px;
+    line-height: 0px;
+    height:1px;
+}
+#account_panel
+{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:200px;
+    height:50px;
+    background-color:Silver;
+    border-radius:5px;
+    cursor:pointer;
+}
+#account_menu
+{
+    position:absolute;
+    right:0px;
+    top:50px;
+    width:120px;
+    height:41px;
+    background-color:black;
+    display:none;
+    border: 1px solid black;
+}
+
+
+
+/*Main menu*/
+#main_menu
+{
+    position:absolute;
+    left:10px;
+    right:10px;
+    top: 70px;
+    height:30px;
+    border-radius: 7px;
+    background-color: #837E7C;
+}
+#classes_tab
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:30px;
+    border-radius:7px;
+    background-color: #837E7C;
+    width:260px;
+    line-height:0px;
+    text-align:center;
+    cursor:pointer;
+}
+#feeds_tab
+{
+    position:absolute;
+    left:260px;
+    height:30px;
+    width:260px;
+    border-radius:7px;
+    background-color: #837E7C;
+    line-height:0px;
+    text-align:center;
+    cursor:pointer;
+}
+
+/*The main panels for content*/
+#classes_panel
+{
+    position:absolute;
+    left:10px;
+    width:780px;
+    height:700px;
+    top:120px;
+    background-color: #2d525d;
+    border-radius:7px;
+    overflow:hidden;
+    z-index:0;
+}
+#feeds_panel
+{
+    position:absolute;
+    width:780px;
+    left:10px;
+    height:300px;
+    top:120px;
+    background-color: #2d525d;
+    border-radius:7px;
+    overflow:hidden;
+    display:none;
+}
+#panel_indicator
+{
+    position:absolute;
+    left:120px;
+    top:108px;
+    height:3px;
+    width:40px;
+    background-color: #2d525d;
+    border-radius: 10px;
+}
+
+
+/*Classes*/
+
+/*Slide ins*/ 
+#slidein_container
+{
+    position:absolute;
+    overflow:hidden;
+    width: 800px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -400px;
+}
+#create_class_panel
+{
+    position:absolute;
+    left:-350px;
+    top:100px;
+    height:280px;
+    width:310px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 3;
+    border-radius:5px;
+    overflow: hidden;
+}
+#post_assignment_panel
+{
+    position:absolute;
+    left:-560px;
+    top:70px;
+    height:480px;
+    width:550px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 3;
+    border-radius:5px;
+    overflow: hidden;
+}
+#view_assignment_panel
+{
+    position:absolute;
+    left:-610px;
+    width:600px;
+    bottom:20px;
+    top:20px;
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 5px;
+    z-index: 3;
+    overflow:hidden;
+}
+#create_feed_panel
+{
+    position:absolute;
+    left:-350px;
+    top:100px;
+    height:280px;
+    width:310px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 3;
+    border-radius:5px;
+    overflow: hidden;
+}
+#post_post_panel
+{
+    position:absolute;
+    left:-560px;
+    top:70px;
+    height:460px;
+    width:550px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 3;
+    border-radius:5px;
+    overflow: hidden;
+}
+#view_posts_panel
+{
+    position:absolute;
+    left:-610px;
+    width:600px;
+    bottom:20px;
+    top:20px;
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 5px;
+    z-index: 3;
+    overflow:hidden;
+}
+#contribute_panel
+{
+    position:absolute;
+    z-index:3;
+    left:-710px;
+    top:60px;
+    bottom:60px;
+    width:700px;
+    background-color:white;
+    overflow:hidden;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+
+/* All the fonts */
+h1
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 28px;
+}
+.email_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.account_fonts
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 14px;
+}
+.main_menu_fonts
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    cursor:pointer;
+}
+.create_class_labels
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 20px;
+}
+.create_class_small_labels
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 16px;
+}
+.class_label_font
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 23px;
+}
+
+
+
+
+
+#footer
+{
+    position:absolute;
+    left:0px;
+    width:800px;
+    height:20px;
+    bottom:-10px;
+    background-color:Silver;
+    border-radius:5px;
+}
+
+
+/*Notification panel*/
+#notification_panel
+{
+    position: fixed;
+    width: 200px;
+    height: 25px;
+    top: -60px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    line-height:0px;
+    z-index:3;
+}
+#notification_text
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 13px;
+}
+
+div.ui-datepicker{
+ font-size:10px;
+}

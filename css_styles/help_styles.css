@@ -1,0 +1,127 @@
+/*
+
+hel_styles.css
+author: Elijah Carbonaro
+defines the styles for help.php
+
+*/
+
+#center_body
+{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 10px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: white;
+    z-index:1;
+}
+#top_bar
+{
+    position:absolute;
+    left:0px;
+    top:-5px;
+    width:800px;
+    height:50px;
+    background-color:Silver;
+    border-radius:5px;
+}
+#sunset_logo
+{
+    position:absolute;
+    left:2px;
+    top:-5px;
+    width:55px;
+    height:55px;
+}
+#apollo_name
+{
+    position:absolute;
+    left:70px;
+    top:6px;
+    line-height: 0px;
+    height:1px;
+}
+h1
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 28px;
+}
+#footer
+{
+    position:absolute;
+    left:0px;
+    width:800px;
+    height:20px;
+    bottom:-10px;
+    background-color:Silver;
+    border-radius:5px;
+}
+#notification_panel
+{
+    position: fixed;
+    width: 200px;
+    height: 25px;
+    top: -60px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    line-height:0px;
+    z-index:3;
+}
+#notification_text
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 13px;
+}
+.email_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.account_fonts
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 14px;
+}
+.main_menu_fonts
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    cursor:pointer;
+}
+.create_class_labels
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 20px;
+}
+.create_class_small_labels
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 16px;
+}
+.class_label_font
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 23px;
+}

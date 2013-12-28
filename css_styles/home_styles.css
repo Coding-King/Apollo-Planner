@@ -1,0 +1,407 @@
+/*
+
+home_styles.css
+author: Elijah Carbonaro
+defines the styles for home.php
+
+*/
+
+#center_body
+{
+    position: absolute;
+    width: 800px;
+    height: 660px;
+    top: 10px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: white;
+    z-index:1;
+}
+/*Main menu*/
+#main_menu
+{
+    position:absolute;
+    left:10px;
+    right:10px;
+    top: 70px;
+    height:30px;
+    border-radius: 7px;
+    background-color: #837E7C;
+}
+#classes_tab
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:30px;
+    border-radius:7px;
+    background-color: #837E7C;
+    width:260px;
+    line-height:0px;
+    text-align:center;
+    cursor:pointer;
+}
+#feeds_tab
+{
+    position:absolute;
+    left:260px;
+    height:30px;
+    width:260px;
+    border-radius:7px;
+    background-color: #837E7C;
+    line-height:0px;
+    text-align:center;
+    cursor:pointer;
+}
+
+#more_tab
+{
+    position:absolute;
+    left:520px;
+    height:30px;
+    width:260px;
+    border-radius:7px;
+    background-color: #837E7C;
+    line-height:0px;
+    text-align:center;
+    cursor:pointer;
+}
+
+
+
+
+#panel_indicator
+{
+    position:absolute;
+    left:120px;
+    top:108px;
+    height:3px;
+    width:40px;
+    background-color: #2d525d;
+    border-radius: 10px;
+}
+
+
+
+
+#main_window
+{
+    position:absolute;
+    left:10px;
+    right:10px;
+    top:120px;
+    bottom:30px;
+    background-color: #2d525d;
+    border-radius: 5px;
+}
+#left_panel
+{
+    position:absolute;
+    left:10px;
+    top:10px;
+    bottom:50px;
+    width:250px;
+    background-color: whitesmoke;
+    border-radius:3px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+#right_panel
+{
+    position:absolute;
+    right:10px;
+    top:10px;
+    bottom:20px;
+    width:470px;
+    background-color: whitesmoke;
+    border-radius:3px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+/* 2x panels for left and right panels */
+#class_container
+{
+    overflow-y:scroll;
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    width:250px;
+    background-color:silver;
+}
+
+#assignment_container
+{
+    overflow-y:scroll;
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    width:470px;
+    background-color:silver;
+}
+
+#feed_container
+{
+    overflow-y:scroll;
+    position:absolute;
+    left:250px;
+    top:0px;
+    bottom:0px;
+    width:250px;
+    background-color:silver;
+}
+
+#post_container
+{
+    overflow-y:scroll;
+    position:absolute;
+    left:470px;
+    top:0px;
+    bottom:0px;
+    width:470px;
+    background-color:silver;
+}
+
+#top_bar
+{
+    position:absolute;
+    left:0px;
+    top:-5px;
+    width:800px;
+    height:50px;
+    background-color:Silver;
+    border-radius:5px;
+}
+#sunset_logo
+{
+    position:absolute;
+    left:2px;
+    top:-5px;
+    width:55px;
+    height:55px;
+}
+#apollo_name
+{
+    position:absolute;
+    left:70px;
+    top:6px;
+    line-height: 0px;
+    height:1px;
+}
+#account_panel
+{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:200px;
+    height:50px;
+    background-color:Silver;
+    border-radius:5px;
+    cursor:pointer;
+}
+#account_menu
+{
+    position:absolute;
+    right:0px;
+    top:50px;
+    width:120px;
+    height:41px;
+    background-color:black;
+    display:none;
+    border: 1px solid black;
+}
+
+
+
+
+/*Slide ins*/ 
+#slidein_container
+{
+    position:absolute;
+    overflow:hidden;
+    width: 800px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -400px;
+}
+#class_selector
+{
+    position:absolute;
+    z-index:3;
+    left:-710px;
+    top:60px;
+    bottom:60px;
+    width:700px;
+    background-color:white;
+    overflow:hidden;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+#feed_selector
+{
+    position:absolute;
+    z-index:3;
+    left:-710px;
+    top:60px;
+    bottom:60px;
+    width:700px;
+    background-color:white;
+    overflow:hidden;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+/*Contributor slide ins*/
+#view_assignment_panel
+{
+    position:absolute;
+    left:-610px;
+    width:600px;
+    bottom:20px;
+    top:20px;
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 5px;
+    z-index: 3;
+    overflow:hidden;
+}
+#new_assignment_panel
+{
+    position:absolute;
+    left:-560px;
+    top:70px;
+    height:480px;
+    width:550px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 3;
+    border-radius:5px;
+    overflow: hidden;
+}
+#view_posts_panel
+{
+    position:absolute;
+    left:-610px;
+    width:600px;
+    bottom:20px;
+    top:20px;
+    background-color:white;
+    border: 3px solid black;
+    border-radius: 5px;
+    z-index: 3;
+    overflow:hidden;
+}
+#new_post_panel
+{
+    position:absolute;
+    left:-560px;
+    top:70px;
+    height:460px;
+    width:550px;
+    background-color:white;
+    border: 3px solid black;
+    z-index: 3;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+
+
+/* All the fonts */
+h1
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 28px;
+}
+.email_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.account_fonts
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 14px;
+}
+.main_menu_fonts
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_font
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 12px;
+    cursor:pointer;
+}
+.create_class_labels
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 20px;
+}
+.create_class_small_labels
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 16px;
+}
+.class_label_font
+{
+    font-family: "Arial", Times, serif;
+    color: black;
+    font-size: 23px;
+}
+
+
+
+
+
+#footer
+{
+    position:absolute;
+    left:0px;
+    width:800px;
+    height:20px;
+    bottom:-10px;
+    background-color:Silver;
+    border-radius:5px;
+}
+
+
+/*Notification panel*/
+#notification_panel
+{
+    position: fixed;
+    width: 200px;
+    height: 25px;
+    top: -60px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    line-height:0px;
+    z-index:3;
+}
+#notification_text
+{
+    color:black;
+    font-family: "Arial", Times, serif;
+    font-size: 13px;
+}
+
+div.ui-datepicker{
+ font-size:10px;
+}

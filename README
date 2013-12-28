@@ -1,0 +1,542 @@
+------------------------------------------------------------------------------------------
+|                ___                ____         ____  __                                |
+|               /   |  ____  ____  / / /___     / __ \/ /___ _____  ____  ___  _____     |
+|              / /| | / __ \/ __ \/ / / __ \   / /_/ / / __ `/ __ \/ __ \/ _ \/ ___/     |
+|             / ___ |/ /_/ / /_/ / / / /_/ /  / ____/ / /_/ / / / / / / /  __/ /         |
+|            /_/  |_/ .___/\____/_/_/\____/  /_/   /_/\__,_/_/ /_/_/ /_/\___/_/          |
+|                  /_/                                                                   |
+|    ____                 __                                 __     __                   |
+|   / __ \___ _   _____  / /___  ____  ____ ___  ___  ____  / /_   / /   ____  ____ _    |
+|  / / / / _ \ | / / _ \/ / __ \/ __ \/ __ `__ \/ _ \/ __ \/ __/  / /   / __ \/ __ `/    |
+| / /_/ /  __/ |/ /  __/ / /_/ / /_/ / / / / / /  __/ / / / /_   / /___/ /_/ / /_/ /     |
+|/_____/\___/|___/\___/_/\____/ .___/_/ /_/ /_/\___/_/ /_/\__/  /_____/\____/\__, /      |
+|                            /_/                                            /____/       |                                       
+------------------------------------------------------------------------------------------
+
+Elijah Brazil Carbonaro
+
+##### Bugs #####
+
+- Max length for all input fields
+- Strip HTML tags, validate user input, and XML invalid tags
+- Require $_SESSION['userId'] for all PHP transactions (or check for contributor status)
+- Bottom half of footer bar disappears when sliding
+- PHP side input validation
+- Deleting an account
+- Common.js & common.css
+- Check ALL web icons, get to work 100%
+- Test on other browsers
+- Cannot name a file "nofile"
+- Check for bad inputs "nofile" and <> tags for XML
+- Re-test all file uploading systems
+- Redo teachers assignment & posts sorting, use SQL Query instead
+- Teacher "no students found" text
+- Unsubscribe students after class/feeds's deletion
+- Turn off auto-fill for most forms
+- Validate file length, name, and size
+- Actually update database subscribers count
+- Pressing space and tab makes things go crazy!
+- Better text selection
+- Change DB to TEXT instead of VARCHAR, allow tabs and enter characters
+- Text Selection
+- Files and update time for feeds (probably) doesn't work
+- View posts as teacher after posting one with a file didn't align right
+
+##### Development Log #####
+
+2013.6.20
+Began initial development. Work on script development. Have no php form 
+validation or account creation. Work on slide warnings too.
+
+2013.6.21
+Finished slide warnings. php account creation form complete with javascript
+validation. Work on auto-size notification box (the top one). Add redirect
+script for finished account creation and add login system.
+
+2013.6.22
+Added size for notification, change loading mouse to whole screen. Added redirect
+for both ways, need custom homescreen for teacher accounts. Added home page, login
+ability, need to add logout
+(2) Changed loading to fullscreen dimmer
+(3) SAVING! Attempting to move all users to one table
+(4) Moved all accounts to users table. Create account allows back to page, fix that
+(5) Fixed that.
+(6) Start implementing main screen and actual table making content.
+
+2013.6.23
+Separated Teacher and student account homepages. Began teacher page dev. Fix the
+menu, have it actually have something and logout
+
+2013.6.24
+Changed to session login system, added auto login
+
+2013.6.25
+Started create class, switched to menu editing
+Working on toggle slidedown menu, finished added logout. other buttons do nothing
+
+2013.6.26
+Split teach.php into separate .css and .js files. Added main content panels
+Working on no classes add panel
+Got no classes button. Add panels on the side to hide slideins
+
+2013.6.27
+Finished create class panel, add implementation in js and php query
+
+2013.6.28
+Added class creation
+createClass.php not passing right values back to teach_js for AJAX response.
+Implement display data & micro loading
+
+2013.7.1
+Working on class displayers. Fix word wrap on email display and account too.
+(2) Fixed word wrap. Finished graphical class display. Change to load from
+database. Fix some of the cursor:pointer's. Added sliding panel indicator. Got
+multi-dimensional php array to javascript for page updating.
+
+2013.7.2
+Finished class loading from database. Add trashcan turning red, scroll to bottom
+and add class with class creation, class deletion, and all button funcitonality.
+
+2013.7.6
+Added class creation, working on delete, fix adding new class data to allData php
+array.
+(2) Finished deletion & start from zero. Work on edit class info.
+
+2013.7.7
++ Almost done with edit class
++ Added jQuery UI library for date picker use
+- Add id's to all class divs to change info without reloading.
+- And allData data update
+- Website and periods not working for updating
+
+2013.7.8
++ Finished edit class
++ Removed faulty http check
++ Fixed edit dialog staying red
+- Add new "http://" checker
+- Vanishing (www) image with no website data
+
+2013.7.9
++ New "http://" checker
++ Almost done website icon remover
+- Website icon will not re-appear on edit
+
+2013.7.10
++ Finished website icon toggle
+
+2013.7.14
++ Added Post Assigment button functionality
++ Finished the post form
++ Data checking all fields
++ loading
++ Changed class file system
+- Working on ajax, need AJAX file upload
+- Change class file system again to support multiple files
+
++ Added file upload functionality
+- Finish postAssigment.php
+- Add method of passing your classId, finish last insert query and done!
+
+2013.7.15
++ Finished Assignment and file upload
++ File upload clearer
+- Fix file extensions
+
+2013.7.17
++ Fixed uploaded file extensions
++ Began class list
+- Figure out how to list different size consecutive divs
+
+2013.7.18
++ Began implementation of allData 4th dimension for class's data, finished intial
+PHP aspect
++ Figured out dynamic div aligning (sorta, see Messaround/gif.php)
+- Put in sliding class and data loader
+
+2013.7.20
++ Can view class Assignments
++ Working on ajax loading for new class assignment
+
+2013.7.21
++ Changed SQL Structure for date, fixed sorting date
++ Can dynamically add posts, show up in view in correct date sort
++ Fixed dynamic and static adding and viewing posts
++ Started working on deleting a post
+- Buttons: Assignment edit & delete, buttons at bottom of view
+- No assignments notification
+
+2013.7.23
++ Almost done with deleting, fading correct one
++ Fixed with postSqlToIndex function
++ Delete file records with delete file
++ Fixed editing issue with assignment records
+- Delete all files and file ledgers when you delete a class, requires extra field in ledger
+- Buttons at bottom, edit, no posts indicator
+
+2013.7.25
++ Deleting classes now deletes all their assignments too, modified SQL table
++ Post Assignment button on View Assignments works now
++ No Assignments Indicator
+FINAL STEPS:::
+- Clear all Assignments
+- Edit assignment
+
+2013.7.26
++ Removed clear all assignments
++ Began edit assignment, working on PHP Side
+- Finish Update assignment
+- G's confirmation
+
+2013.7.28
++ "finished" edit assignment
+- Files messed up
+
+2013.9.4
++ fixed cookie auto login, added USR variable and PSD for more secure auto login
++ Modified "what's this?" slide-in
++ Removed entire "help" tab
+- Need to fix file uploads, customize file input method (only 1 file?)
+
+2013.9.5
++ Fixed auto login again
++ Added label to edit/create class panel
++ PROBABLY done with file uploading and editing. Need to vigorously test before copying to feeds. Then,
+copy most of the code for announcements and you're done with teacher-side implementation!
+- Load more than 15 latest assignments
+- Delete assignment not removing file
+- Change notification drop down
+Pages to add:
+    help
+    contact
+    settings/ my account
+- Split classes and feeds, remove class's contributors section
+
+2013.9.7
++ Changed notification dropdown style
++ Delete class now mysteriously removes files. (?)
++ Fixed modify/delete file for cancelation
+** WARNING: Temp limit 5 initial posts load **
+
+A conundrum: fix dynamic file download with redirect and download from POST variable, work? ASK G
+
+- Working on Loading more than initial amount of assignments. Currently trying to
+parse XML DOM object, some success with alerts. Remember to change all 5's to 15's
+(i think there are 3 of them)
+
+2013.9.8
++ Finished loading multiple assignments and exit delay checker
++ Began feeds addition. Edited database, removed contributors_id from classes and 
+made new feeds table. Began copying code over. Currently just finished transition
+between classes tab and feeds tab.
+- Issue with deleting feed and class's files (Feeds can have same id as classes, fix w/ file_records type field)
++ Feeds work with: adding, deleting (exception for ^^^^^) and editing (website issues, look at id attrs)
+Next:
+    Copy assignment to posting methods
+    View posts (from assignments)
+    Test with fake student accounts contributor IDs
+Also fix repetitions with load more classes
+
+2013.9.9
++ Fixed deleting class/feed file issues: added feed_/class_ to file parent_id
++ Refactored some source files to distinguish between post/assignment
++ Fixed editing feed multiple times issue (& website issue)
++ Finished delete repeats from loading more assignments
++ Fixed website issue with both classes and feeds
+
+In the middle of copying postPost functions, the large postPost. Need to test. Possible
+fix to dynamic file linking could be fixed by checking if the dynamic link is getting
+the actual system_name from the database or superficial supplied name. Also, now
+there is an issue with "View Assignments" after uploading new assignment (no reload)
+with no previous assignments, but it must have a file with it. Look into.
+
+- Unfinished postPost
+- postPost.php
+- Dynamic file linking fix
+- viewAssignments bug
+
+2013.9.10
++ Fixed viewAssignments, (deleted folder(why?))
++ Fixed Dynamic file uploading
++ Probably done with postPost .js & .php
+- Implement view posts, edit, and contributors
+
+2013.9.14
++ Added viewPosts, working on editPosts
+- Done with php edit posts, working on return javascript actions
+- Still need delete, then pretty much done (less contributors)
+
+2013.9.24
++ Began work on My Account page
+- Working on layout, continue with -'s of 9.14
+
+2013.9.25
++ Continued My Account page work, added password change and account delete button
+- Need to add javascript validation and php ajax, continue with -'s of 9.14
+
+2013.9.26
++ Finished javascript for my account page
+- PHP for account page, -'s of 9.14
+
+2013.9.27
++ Added 1/2 PHP code for edit account
++ Pretty much finished with My Account, still need deleting account and all data
++ Changed account menus to only have 2 options; added it to "my account"
++ Got some sexy new ASCII art for the Development Log
+- Putting off deleting account because it'll be different based on how students
+are implemented.
+- -'s of 9.14 that are: post update and delete not done. THEN you're done with teacher
+
+2013.9.28
++ Should be done with TEACHER SIDE IMPLEMENTATION (except for entire contributors
+system)
++ Fixed bug with editing account information
+- Begin Student side implementation!
+classes_to, feeds_to
+
+2013.9.30
++ Worked on get more posts
+- Change database feeds for contributors
+- Change feeds for update time, optional update date for user
+- Move on from teacher, but go back for contributor system and feed times
+
+2013.10.1
++ Fixed load more posts for feeds
++ Just added "Update date and time" for feeds
+- Need to change all DB accessors and change DB date to datetime
+- Change JS to only show Update time when you're editing, add "posted" time slot
+
+2013.10.3
++ Fixed "Edit assignment" title issue with feeds and classes
++ Added full support for tracking time in feeds
+- Not working, editPost.php not recognizing update_time checkbox
+- Have the viewPosts show time as well (not very hard)
+
+2013.10.7
++ Finished time for posts, have viewPosts with time
++ Added name info to classes and feeds properties.
++ Began Student side-implementation
+- Working on editing subscriptions
+
+2013.10.8
++ Worked more on student side
++ Fixed glitch with making classes className and name on createClass and createFeed
+- Web icon for teachers still not entirely working
+- Working on showing classes, add php code at the beginning to load classes and data
+
+2013.10.9
++ Classes now load into left div, add most recent posts to the right.
+
+2013.10.10
++ Removed Slider class displayer for tab highlight option
++ Working on class filler, have it for most recent classes, slight modification
+to load all classes
+- Chose a better highlight color. That blue is hideous
+- Class chooser, then just copy over to feeds as usual
+
+2013.10.14
++ Finished view assignments, began edit classes
++ Working on edit class, can load current classes, write PHP to fetch others with
+SQL search function included
+- Not done with loading other classes
+- Check display with info and period info
+- Check assignment display with files
+
+2013.10.16
++ Working on edit class, finished search function
+- subscribe and unsubscribe
+- check posts with files
+- possibly shrink the info preview size
+
+2013.10.18
++ More work on edit class
++ unsub and sub slide out, need more on sub
++ Need to remove from foundClasses, add to edit, and get details to make div with
+the right slides and animation for alphabetical sorting
+- Clicked editclasses 2x doesn't work
+
+2013.10.22
++ Finished client-side edit classes
++ Fixed, apparently functions' names can't be the same as variables'
+- SQL and PHP edit classes, put in loader to redo the whole page and exit
+- Supermassive XML echo back doc, with 15x posts and all class data :(
+
+2013.10.24
++ Added loader to student's class management
++ Wrote PHP XML generator
+- TODO: javascript side XML parser to classData array
+- Bug: Listing all doesn't work when one is missing any posts
+
+2013.10.25
++ Finished Javascript Supermassive XML parser.
+- Figure out what to do when 1 class had no recent posts, or when you just have
+that class and it still has no recent posts.
+- Web sites not having correct ID and linking to their SQLid... for some very
+strange and kind of funny reason
+- Randomly account auto login stopped working
+
+LINE-COUNT TIME!
+    - 1060 lines of PHP
+    - 1005 lines of CSS
+    - 3873 lines of JavaScript
+    - 1133 lines of HTML
+    - 7073 lines total! Only as of 10.25! Excluding management system, student
+feeds, android, iOS, and a whole lot of skipped stuff!
+
+2013.10.28
++ Fixed all classes with no recent posts, no post warning
+- Bug: unsubscribe all, then click editClasses again
+- left "no classes" message not going away after subscribing from no classes
+- auto-login not working
+- web sites link to SQLid after editing classes
+
+2013.10.30
++ Happy birthday yesterday! 18!
++ Fixed unsubscribe all, "no classes" message, and SQLid website linking
++ Auto-login started working again
++ Started student load more assignments
+- Check file transfer, bug with 2x load more repeating posts
+
+2013.10.31
++ Fixed 2x assignment loading (was DB issue, not AP)
++ Checked file transfer
+- Begin feed copying with special latestFeeds array for newest posts
+
+2013.11.1
++ Worked on copying feeds, having "trasladado list"
+- change the way "most recent feeds" works, finish showFeeds(!=0)
+- "tab" on student home makes thing weird (to say the least)
+- "no x's" on change
+
+2013.11.4
+- can't subscribe to 2nd position searching from empty, only after previous changes
+
+2013.11.5
++ fixed 2nd position search not working
++ Almost done with filtering all posts using SQL select from multiple statement
+- Pulling just the first record as repeating for some reason
+- "no classes/feeds" animation on change
+- Tab is screwing everything up
+
+2013.11.7
++ About 1/2 through saving updated feeds
++ getDateFormat written
+- Finish updating feeds and php save XML file, modify for new newestFeeds array
+- Implement get date format for classes too.
+- Teacher post post is no longer doing anything.
+- Tab screws things up
+
+2013.11.15
++ Wrote PHP XML subscribe feeds code
+- No feeds/classes found when there're repeats
+- Load more recent posts & posts in general
+- Not deep enough in XML, working feeds.js line ~552
+- Using temp "filler" text
+
+2013.11.17
++ Set up home system with new DB configuration
++ Modified databaseconfig.txt file updated to latest version
++ 100's of bug fixed
++ Updated the //TODO section at the top of this document
++ Checked & fixed lots of teacher-side bugs
++ Added teacher feed & class sort by alphabetical
+- Finish the teacher-side debug process in debugging.xls
+- -'s continue from 2013.11.15
+
+2013.11.19
++ Began contributor system, just finished searchStudents
+- finish add, save, and remove contribs.
+- Finish teach debugging
+- -'s from 2013.11.15
+- Quintuple check the website icons on teacher side
+
+2013.11.20
++ Added main.php for main mobile interface
++ Finished teacher-side contributor system
++ Added intense header comments on all ajax_php php files
+- -'s from 2013.11.15
+- Need more.php and update.php for mobile interface
+- Student contributor and feed XML parser & load more
+
+2013.11.21
++ Finished GIGA XML parsed for student saveFeeds()
+- -'s from 2013.11.15
+- Student contributor and load more
+- more.php and update.php for mobile interfaces
+- alert on posting a post teacher
+
+2013.11.22
++ Bug with showing time for students after pm
++ Student posts load more
++ Began student-side contributor system
++ Converted time to YYYY.MM.DD Format. Go ISO
+- Mobile interface
+
+2013.11.25
++ Worked on student no x's fading in
++ Fixed time parser, correct date syntax for loading more
++ Working student-side contrib
+- Just got to clicking on a feed, need 4x edit (& new) and view panes
+- mobile interface
+
+2013.11.28
++ Outlined Android app appearance
++ Finished mobile interface
++ Added view assignment and new assignment for student contrib
+- Not setting title for new assignment panel, then need edit, php-side post and
+edit, basically a lot of work still, then copy it for feeds
+
+2013.11.29
++ Finished student-side class contributor system
+- No file testing or trying many times w/o refresh testing, or load multiple
+times
+- Student feed contributor system
+
+2013.11.30
++ Lots of bug fixes, added SQL DB backup system
++ Began feed contribute system, can view
++ Finished Student contributor system.
+    _____       _      __             ____
+   / __(_)___  (_)____/ /_  ___  ____/ / /
+  / /_/ / __ \/ / ___/ __ \/ _ \/ __  / / 
+ / __/ / / / / (__  ) / / /  __/ /_/ /_/  
+/_/ /_/_/ /_/_/____/_/ /_/\___/\__,_(_)   
+Time: 5 months, 10 days.
+
+2013.12.3
++ Added "Beta" Tag
++ Added help page, server config
+- common.js and common.css
+- get better text selection
+- #Bugs#
+
+2013.12.7
++ Changed XML echo for mobile/main.php
+- #Bugs#
+
+2013.12.10
++ Translated login.php into prepared statements
+- Translate entire planner into those
+- #Bugs#
+
+2013.12.11
++ Cont. PS translation
+- PS trans
+- #Bugs#
+
+2013.12.12
+* see 2013.12.11 *
+
+2013.12.16
++ PQ's up till feedSubscriptions, not working for some reason
+
+2013.12.18
++ keep translating
+- ajax/postpost.php needs to account for feedId in posts, not just 0. Look at old copies for code
+
+2013.12.20
++ Finished ajax and mobile PQ translation
+- Put help, home, myaccount, index, and teach.php indo PQ format
+
+2013.12.23
++ Changed mobile update interface, added new DB table
+- Need main PQ formated
